@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 using System;
+using DevIO.App.Extensions;
 
 namespace DevIO.App.ViewModels
 {
@@ -29,7 +30,8 @@ namespace DevIO.App.ViewModels
         public IFormFile ImagemUpload { get; set; }
 
         public string Imagem { get; set; }
-        
+
+        [Moeda]
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public decimal Valor { get; set; }
 
