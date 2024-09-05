@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DevIO.App.ViewModels
 {
@@ -26,7 +27,7 @@ namespace DevIO.App.ViewModels
 
         [DisplayName("Ativo?")]
         public bool Ativo { get; set; }
-
+       
         public IEnumerable<ProdutoViewModel> Produtos { get; set; }
     }
 }
